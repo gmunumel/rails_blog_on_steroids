@@ -29,4 +29,8 @@ describe '/api/login' do
     context 'valid params' do
     end
   end
+
+  def api_call (*params)
+    post '/api/login', *params
+  end
 end

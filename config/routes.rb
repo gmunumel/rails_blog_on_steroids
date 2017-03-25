@@ -61,4 +61,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # Mount API root
+  mount V1::Root => '/'
 end

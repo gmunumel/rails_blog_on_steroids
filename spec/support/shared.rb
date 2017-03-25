@@ -12,6 +12,13 @@ RSpec.shared_examples '400' do
   end
 end
 
+RSpec.shared_examples '401' do
+  specify 'returns 401' do
+    api_call params
+    expect(response.status).to eq(401)
+  end
+end
+
 RSpec.shared_examples 'contains error msg' do |msg|
   specify "error msg is #{msg}" do
     api_call params

@@ -4,5 +4,6 @@ module V1
     prefix :api
 
     mount Login
+    mount PairProgrammingSessions
   end
 end

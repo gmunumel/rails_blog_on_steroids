@@ -1,7 +1,9 @@
 module V1
   class Login < Grape::API
 
+    desc 'End-points for the Login'
     resource :login do
+      desc 'Login via email and password'
       params do
         requires :email, type: String, desc: 'email'
         requires :password, type: String, desc: 'password'

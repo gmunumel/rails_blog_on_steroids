@@ -11,7 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170325150033) do
+ActiveRecord::Schema.define(version: 20170325234509) do
+
+  create_table "api_keys", force: :cascade do |t|
+    t.string   "token"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
@@ -19,6 +25,16 @@ ActiveRecord::Schema.define(version: 20170325150033) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "audit_logs", force: :cascade do |t|
+    t.string   "backtrace"
+    t.string   "data"
+    t.integer  "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "audit_logs", ["user_id"], name: "index_audit_logs_on_user_id"
 
   create_table "authentication_tokens", force: :cascade do |t|
     t.string   "token"

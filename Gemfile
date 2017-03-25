@@ -26,6 +26,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise'
 # using Rest API
 gem 'grape'
+# Add entity support to API frameworks
+gem 'grape-entity'
+# squeel to get Arel sintax
+gem 'squeel'
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -38,13 +43,15 @@ gem 'grape'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  #gem 'byebug'
   # for haml templates
   gem 'haml-rails'
   # provide test good stuffs
   gem 'factory_girl_rails'
   # rspec provide testing capabilities
   gem 'rspec-rails'
+  # shoulda-style for matchers for rspec to grape-entity
+  gem 'grape-entity-matchers'
 end
 
 group :development do

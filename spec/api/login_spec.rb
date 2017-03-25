@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-describe '/api/login' do
+describe '/api/login', :type => :request do
   let(:email) { user.email }
   let(:password) { user.password }
   let!(:user) { create :user }
@@ -35,6 +35,13 @@ describe '/api/login' do
   end
   context 'positive tests' do
     context 'valid params' do
+      it_behaves_like '200'
+      it_behaves_like 'json result'
+
+      specify 'returns the token as part of the response' do
+        api_call params
+        expect(JSON.parse(response.body)['token']).to be_present
+      end
     end
   end
 

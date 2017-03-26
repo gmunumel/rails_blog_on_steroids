@@ -160,12 +160,25 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.rdoc" pinned="false" current-in-tab="true">
+          <file leaf-file-name="README.rdoc" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/README.rdoc">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="63">
-                  <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+                <state relative-caret-position="101">
+                  <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/README.md">
+              <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+                <state split_layout="SPLIT">
+                  <first_editor relative-caret-position="21">
+                    <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+                    <folding />
+                  </first_editor>
+                  <second_editor />
                 </state>
               </provider>
             </entry>
@@ -195,16 +208,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
                   <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="audit_log_spec.rb" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/spec/models/audit_log_spec.rb">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="5" lean-forward="false" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
@@ -256,7 +259,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/spec/API/login_spec.rb" />
         <option value="$PROJECT_DIR$/app/api/root.rb" />
         <option value="$PROJECT_DIR$/app/api/api.rb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
@@ -307,6 +309,7 @@
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/api/v1/root.rb" />
         <option value="$PROJECT_DIR$/README.rdoc" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -621,6 +624,7 @@
       <recent name="$PROJECT_DIR$/app" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/app/api" />
       <recent name="$PROJECT_DIR$/spec/factories" />
     </key>
@@ -889,7 +893,7 @@
       <workItem from="1490393146815" duration="284000" />
       <workItem from="1490393435475" duration="915000" />
       <workItem from="1490424296950" duration="892000" />
-      <workItem from="1490426618163" duration="44724000" />
+      <workItem from="1490426618163" duration="45365000" />
     </task>
     <servers />
   </component>
@@ -926,7 +930,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46815000" />
+    <option name="totallyTimeSpent" value="47456000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1260" height="733" extended-state="0" />
@@ -997,14 +1001,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/authentication_token.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="46" lean-forward="false" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/factories/authentication_tokens.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1399,9 +1395,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.rdoc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="25" column="67" lean-forward="false" selection-start-line="25" selection-start-column="67" selection-end-line="25" selection-end-column="67" />
+        <state relative-caret-position="101">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="21">
+            <caret line="25" column="63" lean-forward="false" selection-start-line="25" selection-start-column="63" selection-end-line="25" selection-end-column="63" />
+            <folding />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>

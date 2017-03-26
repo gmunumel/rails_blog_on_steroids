@@ -1,0 +1,2 @@
+class HostUser < User
+end

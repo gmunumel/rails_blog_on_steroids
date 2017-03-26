@@ -1,6 +1,6 @@
 RSpec.shared_examples 'json result' do
   specify 'returns JSON' do
-    api_call params
+    process_api_call
     expect { JSON.parse(response.body) }.not_to raise_error
   end
 end
@@ -21,7 +21,7 @@ end
 
 RSpec.shared_examples 'contains error msg' do |msg|
   specify "error msg is #{msg}" do
-    api_call params
+    process_api_call
     json = JSON.parse(response.body)
     expect(json['error_msg']).to eq(msg)
   end
@@ -29,7 +29,7 @@ end
 
 RSpec.shared_examples '200' do
   specify 'returns 200' do
-    api_call params
+    process_api_call
     expect(response.status).to eq(200)
   end
 end
@@ -69,18 +69,18 @@ RSpec.shared_examples 'contains error code' do |code|
   end
 end
 
-RSpec.shared_examples 'contains error msg pair programming' do |msg|
-  specify "error msg is #{msg}" do
-    api_call params, developer_header
-    json = JSON.parse(response.body)
-    expect(json['error_msg']).to eq(msg)
-  end
-end
-
 RSpec.shared_examples 'auditable created' do
   specify 'creates an api call audit' do
     expect do
       api_call params, developer_header
     end.to change{ AuditLog.count }.by(1)
+  end
+end
+
+def process_api_call
+  if defined? developer_header
+    api_call params, developer_header
+  else
+    api_call params
   end
 end
